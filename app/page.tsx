@@ -20,6 +20,15 @@ export default function Home() {
         </h1>
       </header>
 
+      <div className="w-full h-64 sm:h-80 md:h-96 overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/media/ABCFB928-5D43-40F1-A822-1FC7246B7237_1_102_o.jpeg"
+          alt="Bat being rehabilitated"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+
       <div className="border-y border-black/10 px-6 py-3 flex justify-center gap-8 text-xs text-black/50">
         <a href="mailto:susiekaplar@gmail.com" className="hover:text-black transition-colors">
           susiekaplar@gmail.com
