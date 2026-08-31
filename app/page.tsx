@@ -13,7 +13,7 @@ const images = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-black font-sans">
-      <header className="py-20 px-6 text-center">
+      <header className="pt-12 pb-8 px-6 text-center">
         <p className="text-xs uppercase tracking-[0.2em] text-black/40 mb-4">Grainger County, Tennessee</p>
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight leading-tight max-w-xl mx-auto">
           Bat Education and Rehabilitation of Grainger County
@@ -34,7 +34,7 @@ export default function Home() {
         </a>
       </div>
 
-      <section className="max-w-xl mx-auto px-6 pb-20 pt-20 border-b border-black/10">
+      <section className="max-w-xl mx-auto px-6 pb-16 pt-10 border-b border-black/10">
         <h2 className="text-xs uppercase tracking-[0.2em] text-black/40 mb-6">Our Mission</h2>
         <p className="text-base leading-relaxed mb-10">
           We are dedicated to supporting local bat populations in Grainger County through
