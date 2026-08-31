@@ -63,6 +63,28 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="max-w-xl mx-auto px-6 py-20 border-t border-black/10">
+        <h2 className="text-xs uppercase tracking-[0.2em] text-black/40 mb-6">Contact</h2>
+        <div className="space-y-4">
+          <a
+            href="mailto:susiekaplar@gmail.com"
+            className="flex items-center gap-3 group"
+          >
+            <span className="text-xs font-semibold text-black/30 shrink-0">Email</span>
+            <span className="group-hover:underline">susiekaplar@gmail.com</span>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61560281851317"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 group"
+          >
+            <span className="text-xs font-semibold text-black/30 shrink-0">Facebook</span>
+            <span className="group-hover:underline">Bat Education and Rehabilitation of Grainger County</span>
+          </a>
+        </div>
+      </section>
+
       <footer className="border-t border-black/10 py-8 px-6 text-center text-xs text-black/30 tracking-wide">
         © {new Date().getFullYear()} Bat Education and Rehabilitation of Grainger County Inc.
       </footer>
