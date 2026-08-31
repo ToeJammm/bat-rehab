@@ -21,10 +21,10 @@ export default function Home() {
       </header>
 
       <section className="max-w-xl mx-auto px-6 pb-20 border-b border-black/10">
-        <h2 className="text-xs uppercase tracking-[0.2em] text-black/40 mb-6">Mission</h2>
+        <h2 className="text-xs uppercase tracking-[0.2em] text-black/40 mb-6">Our Mission</h2>
         <p className="text-base leading-relaxed mb-10">
-          The mission of the Bat Education and Rehabilitation is to support local bat populations
-          through rehabilitation and public education.
+          We are dedicated to supporting local bat populations in Grainger County through
+          hands-on rehabilitation and community education.
         </p>
         <ul className="space-y-5">
           <li className="flex gap-6 items-start">
@@ -36,10 +36,32 @@ export default function Home() {
           <li className="flex gap-6 items-start">
             <span className="text-xs font-semibold text-black/30 mt-1 shrink-0">02</span>
             <p className="leading-relaxed">
-              Educate the public about bats and their importance in our ecosystem.
+              Educate the public about bats and their vital role in our ecosystem.
             </p>
           </li>
         </ul>
+      </section>
+
+      <section className="max-w-xl mx-auto px-6 py-20 border-b border-black/10">
+        <h2 className="text-xs uppercase tracking-[0.2em] text-black/40 mb-6">Contact</h2>
+        <div className="space-y-4">
+          <a
+            href="mailto:susiekaplar@gmail.com"
+            className="flex items-center gap-3 group"
+          >
+            <span className="text-xs font-semibold text-black/30 shrink-0">Email</span>
+            <span className="group-hover:underline">susiekaplar@gmail.com</span>
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61560281851317"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 group"
+          >
+            <span className="text-xs font-semibold text-black/30 shrink-0">Facebook</span>
+            <span className="group-hover:underline">Bat Education and Rehabilitation of Grainger County</span>
+          </a>
+        </div>
       </section>
 
       <section className="py-20 px-6">
@@ -59,28 +81,6 @@ export default function Home() {
               />
             </div>
           ))}
-        </div>
-      </section>
-
-      <section className="max-w-xl mx-auto px-6 py-20 border-t border-black/10">
-        <h2 className="text-xs uppercase tracking-[0.2em] text-black/40 mb-6">Contact</h2>
-        <div className="space-y-4">
-          <a
-            href="mailto:susiekaplar@gmail.com"
-            className="flex items-center gap-3 group"
-          >
-            <span className="text-xs font-semibold text-black/30 shrink-0">Email</span>
-            <span className="group-hover:underline">susiekaplar@gmail.com</span>
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61560281851317"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 group"
-          >
-            <span className="text-xs font-semibold text-black/30 shrink-0">Facebook</span>
-            <span className="group-hover:underline">Bat Education and Rehabilitation of Grainger County</span>
-          </a>
         </div>
       </section>
 
