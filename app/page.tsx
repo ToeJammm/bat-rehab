@@ -1,17 +1,18 @@
 const images = [
-  '0747134C-72AC-4896-B792-F76DACA271E4_1_102_o.jpeg',
-  '14466EC1-1D5B-4885-8728-F14B73ACDB3D.jpeg',
-  '17FEC243-4A60-4BB4-B01D-E2BA0D7D4F15_1_102_o.jpeg',
-  '6431BC84-A067-455B-B1EB-AB029BB594B8.jpeg',
-  '710A2CD3-F796-443E-9706-B2848F3BE1E8_1_102_o.jpeg',
-  '8134A6F8-5780-4FBF-98AE-13FDCDD5AD24_1_102_o.jpeg',
   'A4CC575C-5F07-44F5-B815-4A74A874FDB7.jpeg',
-  'A8C28307-C698-4699-9948-74603C8F60A9_1_102_o.jpeg',
   'ABCFB928-5D43-40F1-A822-1FC7246B7237_1_102_o.jpeg',
   'D4B38C5F-29C8-4EED-83B0-A26E54DE2A39.jpeg',
   'E1F97CFA-F012-43FB-8BB5-3A8AED8E60AE.jpeg',
   'EADABB4A-5F95-4302-A016-DE6CE7F718FD.jpeg',
   'EFDD8A44-23D7-4977-8E64-19E3728FE267.jpeg',
+]
+
+const videoIds = [
+  'QICN4s5WDYE',
+  '0XdAdN5sCuU',
+  'muZxV64VjFQ',
+  '_Byekl8bFbA',
+  'BXEesGUaKq0',
 ]
 
 export default function Home() {
@@ -48,6 +49,18 @@ export default function Home() {
 
       <section className="py-20 px-6">
         <h2 className="text-xs uppercase tracking-[0.2em] text-black/40 mb-10 text-center">Gallery</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-5xl mx-auto mb-3">
+          {videoIds.map((id) => (
+            <div key={id} className="aspect-video">
+              <iframe
+                src={`https://www.youtube.com/embed/${id}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+          ))}
+        </div>
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-3 max-w-5xl mx-auto">
           {images.map((img) => (
             <div key={img} className="mb-3 break-inside-avoid overflow-hidden">
