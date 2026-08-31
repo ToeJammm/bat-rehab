@@ -37,7 +37,7 @@ export default function Home() {
       <section className="max-w-xl mx-auto px-6 pb-16 pt-10 border-b border-black/10">
         <h2 className="text-xs uppercase tracking-[0.2em] text-black/40 mb-6">Our Mission</h2>
         <p className="text-base leading-relaxed mb-10">
-          We are dedicated to supporting local bat populations in Grainger County through
+          We are dedicated to supporting bat populations across Tennessee through
           hands-on rehabilitation and community education.
         </p>
         <ul className="space-y-5">
