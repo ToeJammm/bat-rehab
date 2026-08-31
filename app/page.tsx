@@ -20,7 +20,21 @@ export default function Home() {
         </h1>
       </header>
 
-      <section className="max-w-xl mx-auto px-6 pb-20 border-b border-black/10">
+      <div className="border-y border-black/10 px-6 py-3 flex justify-center gap-8 text-xs text-black/50">
+        <a href="mailto:susiekaplar@gmail.com" className="hover:text-black transition-colors">
+          susiekaplar@gmail.com
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61560281851317"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-black transition-colors"
+        >
+          Facebook
+        </a>
+      </div>
+
+      <section className="max-w-xl mx-auto px-6 pb-20 pt-20 border-b border-black/10">
         <h2 className="text-xs uppercase tracking-[0.2em] text-black/40 mb-6">Our Mission</h2>
         <p className="text-base leading-relaxed mb-10">
           We are dedicated to supporting local bat populations in Grainger County through
@@ -40,28 +54,6 @@ export default function Home() {
             </p>
           </li>
         </ul>
-      </section>
-
-      <section className="max-w-xl mx-auto px-6 py-20 border-b border-black/10">
-        <h2 className="text-xs uppercase tracking-[0.2em] text-black/40 mb-6">Contact</h2>
-        <div className="space-y-4">
-          <a
-            href="mailto:susiekaplar@gmail.com"
-            className="flex items-center gap-3 group"
-          >
-            <span className="text-xs font-semibold text-black/30 shrink-0">Email</span>
-            <span className="group-hover:underline">susiekaplar@gmail.com</span>
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61560281851317"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-3 group"
-          >
-            <span className="text-xs font-semibold text-black/30 shrink-0">Facebook</span>
-            <span className="group-hover:underline">Bat Education and Rehabilitation of Grainger County</span>
-          </a>
-        </div>
       </section>
 
       <section className="py-20 px-6">
