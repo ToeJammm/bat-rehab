@@ -1,3 +1,5 @@
+import VideoCarousel from './components/VideoCarousel'
+
 const images = [
   'A4CC575C-5F07-44F5-B815-4A74A874FDB7.jpeg',
   'ABCFB928-5D43-40F1-A822-1FC7246B7237_1_102_o.jpeg',
@@ -7,13 +9,6 @@ const images = [
   'EFDD8A44-23D7-4977-8E64-19E3728FE267.jpeg',
 ]
 
-const videoIds = [
-  'QICN4s5WDYE',
-  '0XdAdN5sCuU',
-  'muZxV64VjFQ',
-  '_Byekl8bFbA',
-  'BXEesGUaKq0',
-]
 
 export default function Home() {
   return (
@@ -49,17 +44,8 @@ export default function Home() {
 
       <section className="py-20 px-6">
         <h2 className="text-xs uppercase tracking-[0.2em] text-black/40 mb-10 text-center">Gallery</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-5xl mx-auto mb-3">
-          {videoIds.map((id) => (
-            <div key={id} className="aspect-video">
-              <iframe
-                src={`https://www.youtube.com/embed/${id}`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
-            </div>
-          ))}
+        <div className="mb-12">
+          <VideoCarousel />
         </div>
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-3 max-w-5xl mx-auto">
           {images.map((img) => (
